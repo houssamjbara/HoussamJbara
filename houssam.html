@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houssam Jbara - Surreal Artist & Tattoo Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&family=Exo+2:wght@300;400;700&family=Russo+One&family=Rajdhani:wght@300;400;600;700&family=Saira+Stencil+One&family=Monoton&family=Bungee+Outline&family=Gagalin&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1a1a1a;
+            color: #e8e8e8;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Deep Green and Grey Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 15% 85%, rgba(20, 83, 45, 0.4) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 15%, rgba(15, 60, 30, 0.35) 0%, transparent 55%),
+                radial-gradient(ellipse at 50% 50%, rgba(45, 72, 55, 0.3) 0%, transparent 70%),
+                radial-gradient(ellipse at 25% 25%, rgba(75, 99, 85, 0.25) 0%, transparent 65%),
+                radial-gradient(ellipse at 75% 75%, rgba(55, 81, 65, 0.2) 0%, transparent 60%),
+                radial-gradient(ellipse at 90% 10%, rgba(30, 59, 41, 0.25) 0%, transparent 50%),
+                radial-gradient(ellipse at 10% 90%, rgba(34, 197, 94, 0.2) 0%, transparent 45%);
+            z-index: -3;
+            animation: auroraFlow 30s ease-in-out infinite;
+        }
+        
+        @keyframes auroraFlow {
+            0%, 100% { 
+                background: 
+                    radial-gradient(ellipse at 15% 85%, rgba(20, 83, 45, 0.4) 0%, transparent 60%),
+                    radial-gradient(ellipse at 85% 15%, rgba(15, 60, 30, 0.35) 0%, transparent 55%),
+                    radial-gradient(ellipse at 50% 50%, rgba(45, 72, 55, 0.3) 0%, transparent 70%),
+                    radial-gradient(ellipse at 25% 25%, rgba(75, 99, 85, 0.25) 0%, transparent 65%),
+                    radial-gradient(ellipse at 75% 75%, rgba(55, 81, 65, 0.2) 0%, transparent 60%),
+                    radial-gradient(ellipse at 90% 10%, rgba(30, 59, 41, 0.25) 0%, transparent 50%),
+                    radial-gradient(ellipse at 10% 90%, rgba(34, 197, 94, 0.2) 0%, transparent 45%);
+            }
+            33% { 
+                background: 
+                    radial-gradient(ellipse at 75% 25%, rgba(20, 83, 45, 0.45) 0%, transparent 60%),
+                    radial-gradient(ellipse at 25% 75%, rgba(15, 60, 30, 0.4) 0%, transparent 55%),
+                    radial-gradient(ellipse at 80% 20%, rgba(75, 99, 85, 0.35) 0%, transparent 70%),
+                    radial-gradient(ellipse at 60% 80%, rgba(55, 81, 65, 0.3) 0%, transparent 65%),
+                    radial-gradient(ellipse at 20% 40%, rgba(45, 72, 55, 0.25) 0%, transparent 60%),
+                    radial-gradient(ellipse at 30% 10%, rgba(30, 59, 41, 0.3) 0%, transparent 50%),
+                    radial-gradient(ellipse at 70% 90%, rgba(34, 197, 94, 0.25) 0%, transparent 45%);
+            }
+            66% { 
+                background: 
+                    radial-gradient(ellipse at 40% 60%, rgba(20, 83, 45, 0.35) 0%, transparent 60%),
+                    radial-gradient(ellipse at 60% 40%, rgba(75, 99, 85, 0.3) 0%, transparent 55%),
+                    radial-gradient(ellipse at 20% 80%, rgba(15, 60, 30, 0.4) 0%, transparent 70%),
+                    radial-gradient(ellipse at 80% 20%, rgba(55, 81, 65, 0.35) 0%, transparent 65%),
+                    radial-gradient(ellipse at 50% 10%, rgba(45, 72, 55, 0.3) 0%, transparent 60%),
+                    radial-gradient(ellipse at 85% 85%, rgba(30, 59, 41, 0.2) 0%, transparent 50%),
+                    radial-gradient(ellipse at 15% 15%, rgba(34, 197, 94, 0.3) 0%, transparent 45%);
+            }
+        }
+        
+        /* Artistic Pattern Overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.05) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(45deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(-45deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 80px 80px, 40px 40px, 60px 60px, 60px 60px;
+            z-index: -2;
+            animation: patternFlow 40s linear infinite;
+        }
+        
+        @keyframes patternFlow {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(80px, 80px) rotate(360deg); }
+        }
+        
+
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .logo {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            background: linear-gradient(45deg, #22c55e, #16a34a, #6b7280, #9ca3af, #374151);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.5));
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+        
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        
+        .nav-links a:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #22c55e, #6b7280);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 80%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 4.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #22c55e, #16a34a, #6b7280, #9ca3af, #374151);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(45deg, #22c55e, #6b7280);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(34, 197, 94, 0.6);
+        }
+        
+        /* Floating Particles */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 20%; animation-delay: 2s; }
+        .particle:nth-child(3) { left: 30%; animation-delay: 4s; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 6s; }
+        .particle:nth-child(5) { left: 50%; animation-delay: 8s; }
+        .particle:nth-child(6) { left: 60%; animation-delay: 10s; }
+        .particle:nth-child(7) { left: 70%; animation-delay: 12s; }
+        .particle:nth-child(8) { left: 80%; animation-delay: 14s; }
+        .particle:nth-child(9) { left: 90%; animation-delay: 16s; }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 120px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 80px;
+            background: linear-gradient(45deg, #22c55e, #16a34a, #6b7280, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            font-weight: 700;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(45deg, #22c55e, #6b7280);
+            border-radius: 2px;
+        }
+        
+        /* Grid Controls */
+        .grid-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 40px 0;
+        }
+        
+        .grid-btn {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .grid-btn:hover {
+            background: rgba(34, 197, 94, 0.2);
+            border-color: rgba(34, 197, 94, 0.5);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        
+        .grid-btn.active {
+            background: linear-gradient(45deg, #22c55e, #16a34a);
+            border-color: #22c55e;
+            color: #ffffff;
+            box-shadow: 0 5px 20px rgba(34, 197, 94, 0.3);
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            gap: 40px;
+            margin-top: 40px;
+            padding: 20px;
+            transition: all 0.5s ease;
+        }
+        
+        .gallery-grid[data-columns="2"] {
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+        
+        .gallery-grid[data-columns="3"] {
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        }
+        
+        .gallery-grid[data-columns="4"] {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 1;
+            border-radius: 25px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid transparent;
+            backdrop-filter: blur(15px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        
+        .gallery-item::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, 
+                rgba(34, 197, 94, 0.6), 
+                rgba(20, 83, 45, 0.6), 
+                rgba(75, 99, 85, 0.6),
+                rgba(55, 81, 65, 0.6), 
+                rgba(45, 72, 55, 0.6),
+                rgba(30, 59, 41, 0.6));
+            background-size: 300% 300%;
+            border-radius: 25px;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            z-index: -1;
+            animation: gradientRotate 3s linear infinite;
+        }
+        
+        @keyframes gradientRotate {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(34, 197, 94, 0.15), 
+                rgba(75, 99, 85, 0.1), 
+                rgba(20, 83, 45, 0.1),
+                transparent 70%);
+            opacity: 0;
+            transition: all 0.6s ease;
+            z-index: 2;
+            border-radius: 25px;
+        }
+        
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+        
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 8px 20px rgba(34, 197, 94, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            filter: brightness(0.9) contrast(1.1) saturate(1.2);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+            filter: brightness(1.05) contrast(1.1) saturate(1.1);
+        }
+        
+        .gallery-item.clicked {
+            transform: scale(1.2) translateY(-20px) rotateY(10deg);
+            z-index: 100;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .gallery-item.clicked img {
+            transform: scale(1.3) rotate(5deg);
+        }
+        
+        /* Modal Caption Overlay */
+        .modal-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 40px 30px 30px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            z-index: 3;
+            border-radius: 0 0 25px 25px;
+        }
+        
+        .gallery-item:hover .modal-caption {
+            transform: translateY(0);
+        }
+        
+        .modal-caption h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: #22c55e;
+        }
+        
+        .modal-caption p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        
+        /* Gallery Placeholder */
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Bio Section */
+        .bio-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 80px;
+            align-items: center;
+        }
+        
+        .bio-image {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .bio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .bio-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .bio-text h3 {
+            font-family: 'Orbitron', monospace;
+            background: linear-gradient(45deg, #22c55e, #16a34a, #6b7280, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        /* Contact Section */
+        .contact-content {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .contact-info h3 {
+            font-family: 'Orbitron', monospace;
+            background: linear-gradient(45deg, #22c55e, #16a34a, #6b7280, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+        
+        .contact-item svg {
+            margin-right: 15px;
+            color: #22c55e;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .modal.show {
+            opacity: 1;
+        }
+        
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8) rotateY(-15deg);
+            max-width: 90vw;
+            max-height: 90vh;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+            opacity: 0;
+        }
+        
+        .modal.show .modal-content {
+            transform: translate(-50%, -50%) scale(1) rotateY(0deg);
+            opacity: 1;
+        }
+        
+        .modal img {
+            width: 100%;
+            height: auto;
+            max-height: 90vh;
+            object-fit: contain;
+            display: block;
+            border-radius: 20px;
+        }
+        
+        .modal-placeholder {
+            width: 80vw;
+            height: 60vh;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.5rem;
+            text-align: center;
+            border-radius: 20px;
+            font-family: 'Inter', sans-serif;
+            backdrop-filter: blur(10px);
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2001;
+            transition: all 0.3s ease;
+            background: rgba(0, 0, 0, 0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .close:hover {
+            color: #ff6b6b;
+            transform: scale(1.1);
+            background: rgba(255, 107, 107, 0.2);
+        }
+        
+        /* Navigation arrows */
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            z-index: 2002;
+        }
+        
+        .modal-nav:hover {
+            background: rgba(34, 197, 94, 0.8);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .modal-nav.prev {
+            left: 20px;
+        }
+        
+        .modal-nav.next {
+            right: 20px;
+        }
+        
+        .modal-nav:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        
+        .modal-nav:disabled:hover {
+            background: rgba(0, 0, 0, 0.7);
+            transform: translateY(-50%);
+        }
+        
+        /* Image counter */
+        .image-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            backdrop-filter: blur(10px);
+            z-index: 2002;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .bio-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">Houssam Jbara</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tattoos">Tattoos</a></li>
+                <li><a href="#drawings">Drawings</a></li>
+                <li><a href="#paintings">Paintings</a></li>
+                <li><a href="#custom-designs">Digital Art</a></li>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Houssam Jbara</h1>
+            <p>Tattoo Artist • Painter • Custom Tattoo Designer</p>
+            <a href="#tattoos" class="cta-button">Explore My Universe</a>
+        </div>
+    </section>
+
+    <!-- Tattoos -->
+    <section id="tattoos" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Tattoo Artistry</h2>
+
+            <div class="gallery-grid" data-columns="4">
+                <div class="gallery-item fade-in" style="--item-index: 0;" onclick="openModal('https://i.imgur.com/UNhjkhh.jpg')">
+                    <img src="https://i.imgur.com/UNhjkhh.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" style="--item-index: 1;" onclick="openModal('https://i.imgur.com/4Gca36q.jpg')">
+                    <img src="https://i.imgur.com/4Gca36q.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" style="--item-index: 2;" onclick="openModal('https://i.imgur.com/xj5USIp.jpg')">
+                    <img src="https://i.imgur.com/xj5USIp.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" style="--item-index: 3;" onclick="openModal('https://i.imgur.com/Dvo8lpt.jpg')">
+                    <img src="https://i.imgur.com/Dvo8lpt.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" style="--item-index: 4;" onclick="openModal('https://i.imgur.com/NL7jzfO.jpg')">
+                    <img src="https://i.imgur.com/NL7jzfO.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" style="--item-index: 5;" onclick="openModal('https://i.imgur.com/xTIGUo9.jpg')">
+                    <img src="https://i.imgur.com/xTIGUo9.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/PWDHi23.jpg')">
+                    <img src="https://i.imgur.com/PWDHi23.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/pMJt0IQ.jpg')">
+                    <img src="https://i.imgur.com/pMJt0IQ.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/OSWuXNF.jpg')">
+                    <img src="https://i.imgur.com/OSWuXNF.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/SWG9hpW.jpg')">
+                    <img src="https://i.imgur.com/SWG9hpW.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/pMNbcHu.jpg')">
+                    <img src="https://i.imgur.com/pMNbcHu.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/VrZ1rJQ.jpg')">
+                    <img src="https://i.imgur.com/VrZ1rJQ.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/TXfZERD.jpg')">
+                    <img src="https://i.imgur.com/TXfZERD.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/bJaY6wI.jpg')">
+                    <img src="https://i.imgur.com/bJaY6wI.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/pdGg47x.jpg')">
+                    <img src="https://i.imgur.com/pdGg47x.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/p8nIJm4.jpg')">
+                    <img src="https://i.imgur.com/p8nIJm4.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/qHentgp.jpg')">
+                    <img src="https://i.imgur.com/qHentgp.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/Is3sxhC.jpg')">
+                    <img src="https://i.imgur.com/Is3sxhC.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/sSiu8Es.jpg')">
+                    <img src="https://i.imgur.com/sSiu8Es.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/kZLjxBd.jpg')">
+                    <img src="https://i.imgur.com/kZLjxBd.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/pA79SHd.jpg')">
+                    <img src="https://i.imgur.com/pA79SHd.jpg" alt="Tattoo artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drawings -->
+    <section id="drawings" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Hand Drawings</h2>
+            <div class="gallery-grid" data-columns="4">
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/tDkVSx1.jpg')">
+                    <img src="https://i.imgur.com/tDkVSx1.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/uvA5LRH.jpg')">
+                    <img src="https://i.imgur.com/uvA5LRH.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/boHpoML.jpg')">
+                    <img src="https://i.imgur.com/boHpoML.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/X28bb43.jpg')">
+                    <img src="https://i.imgur.com/X28bb43.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/cN0nEgh.jpg')">
+                    <img src="https://i.imgur.com/cN0nEgh.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/JQHwndc.jpg')">
+                    <img src="https://i.imgur.com/JQHwndc.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/wCDXocQ.jpg')">
+                    <img src="https://i.imgur.com/wCDXocQ.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/jSSa7ie.jpg')">
+                    <img src="https://i.imgur.com/jSSa7ie.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/geJxnqU.jpg')">
+                    <img src="https://i.imgur.com/geJxnqU.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/ktGXUMG.jpg')">
+                    <img src="https://i.imgur.com/ktGXUMG.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/AHoLd8t.jpg')">
+                    <img src="https://i.imgur.com/AHoLd8t.jpg" alt="Hand drawing" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paintings -->
+    <section id="paintings" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Paintings</h2>
+            <div class="gallery-grid" data-columns="4">
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/sDza4zZ.jpg')">
+                    <img src="https://i.imgur.com/sDza4zZ.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/5uFrqDl.jpg')">
+                    <img src="https://i.imgur.com/5uFrqDl.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/dqbpgjP.jpg')">
+                    <img src="https://i.imgur.com/dqbpgjP.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/5f1fPVI.jpg')">
+                    <img src="https://i.imgur.com/5f1fPVI.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/nZon7LT.jpg')">
+                    <img src="https://i.imgur.com/nZon7LT.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/trZsiXr.jpg')">
+                    <img src="https://i.imgur.com/trZsiXr.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/Tzra1jR.jpg')">
+                    <img src="https://i.imgur.com/Tzra1jR.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/XpG8f1X.jpg')">
+                    <img src="https://i.imgur.com/XpG8f1X.jpg" alt="Painting" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Artworks -->
+    <section id="custom-designs" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Digital Artworks</h2>
+            <div class="gallery-grid" data-columns="4">
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/8BwaRLE.jpg')">
+                    <img src="https://i.imgur.com/8BwaRLE.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/bHZ14tk.jpg')">
+                    <img src="https://i.imgur.com/bHZ14tk.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/xM78ncC.jpg')">
+                    <img src="https://i.imgur.com/xM78ncC.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/Z7uShQd.jpg')">
+                    <img src="https://i.imgur.com/Z7uShQd.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/j580wyP.jpg')">
+                    <img src="https://i.imgur.com/j580wyP.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/WCw4sWD.jpg')">
+                    <img src="https://i.imgur.com/WCw4sWD.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/i3KpYy6.jpg')">
+                    <img src="https://i.imgur.com/i3KpYy6.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/FLy0yBA.jpg')">
+                    <img src="https://i.imgur.com/FLy0yBA.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/ERiU1ZJ.jpg')">
+                    <img src="https://i.imgur.com/ERiU1ZJ.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/dNgl1tG.jpg')">
+                    <img src="https://i.imgur.com/dNgl1tG.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/hO3llkS.jpg')">
+                    <img src="https://i.imgur.com/hO3llkS.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/30Eg0Bq.jpg')">
+                    <img src="https://i.imgur.com/30Eg0Bq.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/5LtnXsQ.jpg')">
+                    <img src="https://i.imgur.com/5LtnXsQ.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/9kimJNq.jpg')">
+                    <img src="https://i.imgur.com/9kimJNq.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/8ahwSfS.jpg')">
+                    <img src="https://i.imgur.com/8ahwSfS.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/DR9JXpA.jpg')">
+                    <img src="https://i.imgur.com/DR9JXpA.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="gallery-item fade-in" onclick="openModal('https://i.imgur.com/NsxxfgO.jpg')">
+                    <img src="https://i.imgur.com/NsxxfgO.jpg" alt="Digital artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio -->
+    <section id="bio" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About the Artist</h2>
+            <div class="bio-content">
+                <div class="bio-image">
+                    <img src="https://i.imgur.com/GoIBSWb.jpg" alt="Houssam Jbara Portrait" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div class="bio-text fade-in">
+                    <h3>The Visionary Behind the Art</h3>
+                    <p>I'm Houssam Jbara, a self-taught tattoo artist and painter from Tyre, Lebanon. At a young age, I dedicated myself fully to art, and since 2019 I've been building a path through black and grey realism and surrealism in tattoos, as well as colorful and surreal explorations in painting.</p>
+                    
+                    <p>My work flows from within, guided by visions and messages from a deeper place, and finds expression on skin, canvas, and digital platforms. For me, art is more than a craft; it's a way to connect with emotion, depth, and the unseen.</p>
+                    
+                    <p>Each piece I create tells a story of transformation and inner vision—whether it's the permanent artistry that adorns someone's skin or the vibrant surreal worlds that come alive on canvas. My journey as a self-taught artist has been one of constant discovery, where technique serves the deeper calling to bring the invisible into form.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content" style="display: flex; justify-content: center;">
+                <div class="contact-info fade-in" style="max-width: 600px;">
+                    <h3>Connect With Me</h3>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>houssam_gebara@hotmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <span>+961 81 953 269</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span>Lebanon</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5z"/>
+                        </svg>
+                        <span>@houssam_jbara</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <button class="modal-nav prev" id="prevBtn">‹</button>
+        <button class="modal-nav next" id="nextBtn">›</button>
+        <div class="image-counter" id="imageCounter">1 / 1</div>
+        <div class="modal-content">
+            <div class="modal-placeholder">
+                <div>
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                    </svg>
+                    <p>Artwork Preview<br/>Click to view full size</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Gallery item click animation
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.add('clicked');
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 600);
+            });
+        });
+
+        // Gallery data
+        const galleries = {
+            tattoos: [
+                'https://i.imgur.com/UNhjkhh.jpg',
+                'https://i.imgur.com/4Gca36q.jpg',
+                'https://i.imgur.com/xj5USIp.jpg',
+                'https://i.imgur.com/Dvo8lpt.jpg',
+                'https://i.imgur.com/NL7jzfO.jpg',
+                'https://i.imgur.com/xTIGUo9.jpg',
+                'https://i.imgur.com/PWDHi23.jpg',
+                'https://i.imgur.com/pMJt0IQ.jpg',
+                'https://i.imgur.com/OSWuXNF.jpg',
+                'https://i.imgur.com/SWG9hpW.jpg',
+                'https://i.imgur.com/pMNbcHu.jpg',
+                'https://i.imgur.com/VrZ1rJQ.jpg',
+                'https://i.imgur.com/TXfZERD.jpg',
+                'https://i.imgur.com/bJaY6wI.jpg',
+                'https://i.imgur.com/pdGg47x.jpg',
+                'https://i.imgur.com/p8nIJm4.jpg',
+                'https://i.imgur.com/qHentgp.jpg',
+                'https://i.imgur.com/Is3sxhC.jpg',
+                'https://i.imgur.com/sSiu8Es.jpg',
+                'https://i.imgur.com/kZLjxBd.jpg',
+                'https://i.imgur.com/pA79SHd.jpg'
+            ],
+            drawings: [
+                'https://i.imgur.com/tDkVSx1.jpg',
+                'https://i.imgur.com/uvA5LRH.jpg',
+                'https://i.imgur.com/boHpoML.jpg',
+                'https://i.imgur.com/X28bb43.jpg',
+                'https://i.imgur.com/cN0nEgh.jpg',
+                'https://i.imgur.com/JQHwndc.jpg',
+                'https://i.imgur.com/wCDXocQ.jpg',
+                'https://i.imgur.com/jSSa7ie.jpg',
+                'https://i.imgur.com/geJxnqU.jpg',
+                'https://i.imgur.com/ktGXUMG.jpg',
+                'https://i.imgur.com/AHoLd8t.jpg'
+            ],
+            paintings: [
+                'https://i.imgur.com/sDza4zZ.jpg',
+                'https://i.imgur.com/5uFrqDl.jpg',
+                'https://i.imgur.com/dqbpgjP.jpg',
+                'https://i.imgur.com/5f1fPVI.jpg',
+                'https://i.imgur.com/nZon7LT.jpg',
+                'https://i.imgur.com/trZsiXr.jpg',
+                'https://i.imgur.com/Tzra1jR.jpg',
+                'https://i.imgur.com/XpG8f1X.jpg'
+            ],
+            digital: [
+                'https://i.imgur.com/8BwaRLE.jpg',
+                'https://i.imgur.com/bHZ14tk.jpg',
+                'https://i.imgur.com/xM78ncC.jpg',
+                'https://i.imgur.com/Z7uShQd.jpg',
+                'https://i.imgur.com/j580wyP.jpg',
+                'https://i.imgur.com/WCw4sWD.jpg',
+                'https://i.imgur.com/i3KpYy6.jpg',
+                'https://i.imgur.com/FLy0yBA.jpg',
+                'https://i.imgur.com/ERiU1ZJ.jpg',
+                'https://i.imgur.com/dNgl1tG.jpg',
+                'https://i.imgur.com/hO3llkS.jpg',
+                'https://i.imgur.com/30Eg0Bq.jpg',
+                'https://i.imgur.com/5LtnXsQ.jpg',
+                'https://i.imgur.com/9kimJNq.jpg',
+                'https://i.imgur.com/8ahwSfS.jpg',
+                'https://i.imgur.com/DR9JXpA.jpg',
+                'https://i.imgur.com/NsxxfgO.jpg'
+            ]
+        };
+
+        // Modal functionality
+        const modal = document.getElementById('modal');
+        const closeBtn = document.querySelector('.close');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const imageCounter = document.getElementById('imageCounter');
+        
+        let currentGallery = [];
+        let currentIndex = 0;
+
+        function getGalleryType(imageUrl) {
+            for (const [type, images] of Object.entries(galleries)) {
+                if (images.includes(imageUrl)) {
+                    return type;
+                }
+            }
+            return null;
+        }
+
+        function updateModal() {
+            const modalContent = modal.querySelector('.modal-content');
+            const imageUrl = currentGallery[currentIndex];
+            modalContent.innerHTML = `<img src="${imageUrl}" alt="Artwork" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">`;
+            
+            // Update counter
+            imageCounter.textContent = `${currentIndex + 1} / ${currentGallery.length}`;
+            
+            // Update button states
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === currentGallery.length - 1;
+        }
+
+        function openModal(imageUrl) {
+            const galleryType = getGalleryType(imageUrl);
+            if (galleryType) {
+                currentGallery = galleries[galleryType];
+                currentIndex = currentGallery.indexOf(imageUrl);
+            } else {
+                currentGallery = [imageUrl];
+                currentIndex = 0;
+            }
+            
+            updateModal();
+            modal.style.display = 'block';
+            setTimeout(() => {
+                modal.classList.add('show');
+            }, 10);
+        }
+
+        function closeModal() {
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        }
+
+        function showPrevImage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateModal();
+            }
+        }
+
+        function showNextImage() {
+            if (currentIndex < currentGallery.length - 1) {
+                currentIndex++;
+                updateModal();
+            }
+        }
+
+        // Event listeners
+        closeBtn.addEventListener('click', closeModal);
+        prevBtn.addEventListener('click', showPrevImage);
+        nextBtn.addEventListener('click', showNextImage);
+
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Keyboard navigation for modal
+        document.addEventListener('keydown', function(event) {
+            if (modal.style.display === 'block') {
+                switch(event.key) {
+                    case 'Escape':
+                        closeModal();
+                        break;
+                    case 'ArrowLeft':
+                        showPrevImage();
+                        break;
+                    case 'ArrowRight':
+                        showNextImage();
+                        break;
+                }
+            }
+        });
+
+        // Touch/swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        modal.addEventListener('touchstart', function(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        });
+
+        modal.addEventListener('touchend', function(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swiped left - show next image
+                    showNextImage();
+                } else {
+                    // Swiped right - show previous image
+                    showPrevImage();
+                }
+            }
+        }
+
+        // Grid controls functionality
+        document.querySelectorAll('.grid-controls').forEach(controls => {
+            const buttons = controls.querySelectorAll('.grid-btn');
+            const gallery = controls.nextElementSibling;
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons in this control group
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    // Update gallery grid
+                    const columns = button.getAttribute('data-columns');
+                    gallery.setAttribute('data-columns', columns);
+                });
+            });
+        });
+
+        // Enhanced gallery animations on scroll
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        galleryItems.forEach((item, index) => {
+            item.style.setProperty('--item-index', index);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'985d06a95358e30b',t:'MTc1ODk5NzM0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
